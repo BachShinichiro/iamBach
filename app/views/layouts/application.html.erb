@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IamBach</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>ロゴ</h1>
+      <ul>
+        <li><%= link_to 'ロゴ', post_path %></li>
+        <li><%= link_to 'アラサーの名言集', 'https://4meee.com/articles/view/904172' %></li>
+        <li><%= link_to 'つぶやく', new_post_path %></li>
+      </ul>
+    </header>
+    <%= yield %>
+  </body>
+</html>
