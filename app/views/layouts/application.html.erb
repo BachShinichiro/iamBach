@@ -5,13 +5,35 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>
-      <%=link_to image_tag("bh-logo.JPG"), tops_path, class:"iambh" %>
+      <div class="container">
+        <div class="header-left">
+          <div class="logo">
+            <%=link_to image_tag("iambh_logo.png"), tops_path %>
+          </div>
+        </div>
+      <!-- モバイル用のヘッダーメニューアイコン -->
+        <span class="fa fa-bars menu-icon"></span>
+
+        <div class="header-right">
+          <a href="">Music</a>
+          <a href="">Art</a>
+          <a href="#" class="login">WebApp</a>
+          <a href="#" class="login"></a>
+        </div>
+      </div>
     </header>
     <%= yield %>
   </body>
