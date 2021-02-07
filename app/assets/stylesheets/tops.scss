@@ -19,22 +19,51 @@ a {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  overflow:	hidden;
+  position:	relative;
+}
+.container img {
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+	height:	100%;
+}
+.container .caption {
+  text-align: center;
+  padding-top: 80px;
+}
+.container .mask {
+  max-width: 1170px;
+  width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
 }
 
+.container:hover .mask {
+  opacity:		1;
+}
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(top.png);
+  // background-image: url(top.png);
   background-position: center;
   background-size: cover;
   color: white;
   text-align: center;
   margin-top:100px;
 }
+
 .top-wrapper h1 {   
   opacity: 0.7;
   font-size: 45px;
   letter-spacing: 5px;
 }
+
 .top-wrapper p {
    opacity: 0.7;
  }
@@ -157,7 +186,6 @@ header {
   padding-top: 80px;	
   padding-bottom: 50px;
   color: #5f5d60;
-
 }
 
 .heading h2 {
@@ -190,6 +218,7 @@ header {
   font-size: 12px;??? */
   color: #b3aeb5;
 }
+
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
@@ -206,6 +235,7 @@ header {
 .heading h3 {
   font-weight: normal;
 }
+
 .message:active {
   box-shadow: none;
   position: relative;
