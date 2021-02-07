@@ -49,7 +49,7 @@ a {
   opacity:		1;
 }
 .top-wrapper {
-  padding: 180px 0 100px 0;
+  padding: 50px 0 100px 0;
   // background-image: url(top.png);
   background-position: center;
   background-size: cover;
@@ -170,13 +170,20 @@ header {
   transform: scale(1, 1);
 } 
 
-.lesson-wrapper {
+.contents-wrapperr {
   /* 付け足し */
   padding-left: 5%;	
   padding-right: 5%;
 
   padding-bottom: 80px;
   background-color: #f7f7f7;
+  text-align: center;
+}
+
+.content-wrapper {
+  padding-left: 5%;	
+  padding-right: 5%;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -192,19 +199,40 @@ header {
   font-weight: normal;
 }
 
+iframe {
+  align-items: center;
+}
+
+.music img {
+  width: 250px;
+  height: 60px;
+  margin-top: 10em;
+}
+
+.lesson img {
+  align-items: center;
+
+}
+
 .lesson {
   float: left;
   width: 25%;
 }
 
+
+
+
 .lesson-icon {
   position: relative;
+}
+
+.lesson-icon img {
+  padding: auto;
 }
 
 .lesson-icon p {
   position: absolute;
   top: 44%;
-  /* top: 90px; ??? */
   width: 100%;
   color: white;
 }
