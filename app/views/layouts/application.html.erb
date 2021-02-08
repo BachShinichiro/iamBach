@@ -14,6 +14,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag('favicon.ico') %>
   </head>
 
   <body>
@@ -33,14 +34,26 @@
         <span class="fa fa-bars menu-icon"></span>
 
         <div class="header-right">
-          <a href="">Music</a>
-          <a href="">Portrait</a>
-          <a href="">T-shirt</a>
-          <a href="#" class="login">WebApp</a>
-          <a href="#" class="login">Contact</a>
+          <a href="#Music">Music</a>
+          <a href="#Portrait">Portrait</a>
+          <a href="#T-shirt">T-shirt</a>
+          <a href="#WebApp" class="login">WebApp</a>
+          <a href="#Contact" class="login">Contact</a>
         </div>
       </div>
     </header>
     <%= yield %>
+    <footer>
+      <div class="footer-left">
+          <a href="#Music">Music</a>
+          <a href="#Portrait">Portrait</a>
+          <a href="#T-shirt">T-shirt</a>
+          <a href="#WebApp" class="login">WebApp</a>
+          <a href="#Contact" class="login">Contact</a>
+      </div>
+      <div class="footer-right">
+        <p>©️IamBach2020</p>
+      </div>
+    </footer>
   </body>
 </html>
