@@ -17,10 +17,11 @@ a {
 .container {
   max-width: 1170px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0;
   margin: 0 auto;
   overflow:	hidden;
   position:	relative;
+  overflow:hidden;
 }
 .container img {
   align-items: center;
@@ -28,64 +29,90 @@ a {
   width: 100%;
 	height:	100%;
   z-index: 3;
+  transition:1s all;
 }
 
-.container .top img {
+// .container img:hover {
+//   transform:scale(1.2,1.2);
+//   transition:1s all;
+// }
+
+.container:hover .top{
+  transform:scale(1.5,1.5);
+  transition:1s all;
+}
+
+
+
+.tshirt-container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow:	hidden;
+  position:	relative;
+  overflow:hidden;
+}
+
+.tshirt-container img {
   align-items: center;
   max-width: 1170px;
   width: 100%;
 	height:	100%;
   z-index: 3;
-  position:	absolute;
-  top: 0;
-  left: 0;
+  transition:1s all;
+}
+
+.tshirt-container img:hover {
+  transform:scale(1.2,1.2);
+  transition:1s all;
 }
 
 
-
-.container .top img:hover {
-  opacity: 0;
-}
-
-.top2 img {
+.container .top{
   align-items: center;
   max-width: 1170px;
-  width: 100%;
-	height:	100%;
-  position: relative;
-  z-index: 2;
+  width: 1170px;
+  height:	814px;
+  z-index: 3;
 }
 
-.container h1 a {
+
+.container a h1{
+  color: white;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.container a p{
   color: white;
 }
-.container h1 a:hover {
-  opacity: 0;
-}
+
 .container .caption {
   text-align: center;
   padding-top: 80px;
 }
 
-// .container .mask {
-//   max-width: 1170px;
-//   width: 100%;
-//   height:	100%;
-//   position:	absolute;	/* 絶対位置指定 */
-//   top: 0;
-//   left:	0;
-//   opacity: 0;	/* マスクを表示しない */
-//   background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
-//   -webkit-transition:	all 0.2s ease;
-//   transition:	all 0.2s ease;
-// }
+.container .mask {
+  max-width: 1170px;
+  width: 1170px;
+  height:	814px;
+  position:	absolute;	/* 絶対位置指定 */
+  top: 0;
+  left:	0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;	/* マスクを表示しない */
+  background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+  -webkit-transition:	all 0.2s ease;
+  transition:	all 0.2s ease;
+}
 
-// .container:hover .mask {
-//   opacity:		1;
-// }
+.container:hover .mask {
+  opacity:		1;
+}
 .top-wrapper {
   padding: 50px 0 100px 0;
-  // background-image: url(top.png);
   background-position: center;
   background-size: cover;
   color: white;

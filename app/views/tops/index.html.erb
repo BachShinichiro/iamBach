@@ -1,14 +1,16 @@
 <body>
   <div class="top-wrapper">
     <div class="container">
-      <div class='top'>
-        <%=link_to image_tag("top.jpg") , about_index_path%>
-      </div>
-      <div  class="top2">
-        <%=link_to image_tag("top2.png") , about_index_path%>
-      </div>
+      <%= image_tag("top.jpg" , class: "top") %>
+        <a href='/about/index' class='mask'>
+          <h1>Who is Bach?
+          <br>
+            </h1>
+            <p>バッハ槙一郎って何者?
+            <br>
+            </p>
+        </a>
     </div>
-
   </div>
   <div class="contents-wrapperr">
     <div class="container">
@@ -70,7 +72,7 @@
     </div>
   </div>
     <div class="contents-wrapperr">
-    <div class="container">
+    <div class="tshirt-container">
       <div class="heading">
         <h1 id="T-shirt">
           T-shirt
