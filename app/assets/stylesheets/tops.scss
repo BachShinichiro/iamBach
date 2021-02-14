@@ -27,29 +27,62 @@ a {
   max-width: 1170px;
   width: 100%;
 	height:	100%;
-  z-index: 1;
+  z-index: 3;
+}
+
+.container .top img {
+  align-items: center;
+  max-width: 1170px;
+  width: 100%;
+	height:	100%;
+  z-index: 3;
+  position:	absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+.container .top img:hover {
+  opacity: 0;
+}
+
+.top2 img {
+  align-items: center;
+  max-width: 1170px;
+  width: 100%;
+	height:	100%;
+  position: relative;
+  z-index: 2;
+}
+
+.container h1 a {
+  color: white;
+}
+.container h1 a:hover {
+  opacity: 0;
 }
 .container .caption {
   text-align: center;
   padding-top: 80px;
 }
 
-.container .mask {
-  max-width: 1170px;
-  width: 100%;
-  height:	100%;
-  position:	absolute;	/* 絶対位置指定 */
-  top: 0;
-  left:	0;
-  opacity: 0;	/* マスクを表示しない */
-  background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
-  -webkit-transition:	all 0.2s ease;
-  transition:	all 0.2s ease;
-}
+// .container .mask {
+//   max-width: 1170px;
+//   width: 100%;
+//   height:	100%;
+//   position:	absolute;	/* 絶対位置指定 */
+//   top: 0;
+//   left:	0;
+//   opacity: 0;	/* マスクを表示しない */
+//   background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+//   -webkit-transition:	all 0.2s ease;
+//   transition:	all 0.2s ease;
+// }
 
-.container:hover .mask {
-  opacity:		1;
-}
+// .container:hover .mask {
+//   opacity:		1;
+// }
 .top-wrapper {
   padding: 50px 0 100px 0;
   // background-image: url(top.png);
@@ -117,7 +150,7 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 2;
+  z-index: 4;
 }
 
 
@@ -244,8 +277,6 @@ footer p {
 }
 
 .heading {
-  /* これに関しては不明 */
-  /* padding: 60px 0 30px 0; */
   padding-top: 80px;	
   padding-bottom: 50px;
   color: #5f5d60;
