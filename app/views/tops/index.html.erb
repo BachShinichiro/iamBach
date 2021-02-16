@@ -1,6 +1,7 @@
 <body>
+
   <div class="top-wrapper">
-    <div class="container">
+    <div class="main-image">
       <%= image_tag("top.jpg" , class: "top") %>
         <a href='/about/index' class='mask'>
           <h1>Who is Bach?
@@ -12,7 +13,8 @@
         </a>
     </div>
   </div>
-  <div class="contents-wrapperr">
+
+  <div class="contents-wrapper">
     <div class="container">
       <div class="heading">
         <h1 id="Music">
@@ -20,20 +22,20 @@
         </h1>
       </div>
       <h3>フォークソング</h3>
-      <div class="lessons">
+      <div class="contents">
         <div class="music">
-          <div class="lesson-icon">
+          <div class="content-icon">
             <br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/I6PhEuBVJoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <p class="txt-contents">「えんぴつ」学生の頃に感じてたことを思い出して作りました。</p>
           <%=link_to image_tag("yt_logo_mono_light.png"), 'https://www.youtube.com/user/Mrunitedeveryday/videos?view=0&sort=p&flow=grid', target: :_blank, rel: "noopener noreferrer" %>
         </div>
-        <div class="clear"></div>
       </div>
     </div>
   </div>
-    <div class="content-wrapper">
+
+  <div class="content-wrapper-white">
     <div class="container">
       <div class="heading">
         <h1 id="Portrait">
@@ -42,36 +44,36 @@
       </div>
       <h3>Happy Birthday To Meプロジェクト</h3>
       <p>毎年、誕生日にその年を表す写真を撮りお爺ちゃんになったら個展を開くのが夢です</p>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
+      <div class="contents">
+        <div class="content">
+          <div class="content-icon">
             <%=link_to image_tag("25portrate.JPG") %>
           </div>
           <p class="txt-contents">「大きな夢」<br>友達の撮影の手伝いをしていて誕生日が近いからと言って何枚か撮った写真です。この写真の評判が良かったので毎年撮ろうと思いつきました。</p>
         </div>
         
-        <div class="lesson">
-          <div class="lesson-icon">
+        <div class="content">
+          <div class="content-icon">
             <%=link_to image_tag("26portrate.JPG") %>
           </div>
           <p class="txt-contents">「令和のニューリーダー」<br>平成から令和へ時代が移り昭和のファッションと平成の象徴を背景に令和を引っ張るリーダーになる。と思いを込めて撮影しました。</p>
         </div>
 
-        <div class="lesson">
-          <div class="lesson-icon">
+        <div class="content">
+          <div class="content-icon">
             <%=link_to image_tag("27portrate.jpg") %>
           </div>
           <p class="txt-contents">「守るべきは口元だけですか？」<br>
           マスクでスーツを作りました。
           <%= link_to '【日本赤十字社】「ウイルスの次にやってくるもの」', 'https://youtu.be/rbNuikVDrN4' %>
-          という動画からインスピレーションを経て制作しました。一番守るべきは人の心です。
-</p>
+          という動画からインスピレーションを経て制作しました。一番守るべきは人の心です。</p>
         </div>
         <div class="clear"></div>
       </div>
     </div>
   </div>
-    <div class="contents-wrapperr">
+
+  <div class="contents-wrapper">
     <div class="tshirt-container">
       <div class="heading">
         <h1 id="T-shirt">
@@ -80,30 +82,30 @@
         <h3>ファッションは、アティチュード</h3>
         <p>これは、友人から聞いて納得した言葉です。それなら自分で作ってしまおうということです。</p>
       </div>
-      <div class="lessons">
+      <div class="contents">
         <div class="design">
-          <div class="lesson-icon">
+          <div class="content-icon">
           <%=link_to image_tag("Tochiji.JPG") %>
           </div>
           <p class="txt-contents">2019年1月バンクシーが日本に作品を残したと噂が広まりました。そんな中、落書きを消すべき行政のトップ自ら記念写真を撮りました。本当にバンクシーの作品だったのかは誰も知りませんが、この一連の騒動をバンクシーは世界のどこかで笑っているかも。</p>
         </div>
         
         <div class="design">
-          <div class="lesson-icon">
+          <div class="content-icon">
           <%=link_to image_tag("OScace.jpg") %>
           </div>
           <p class="txt-contents">松居一代さんのYoutubeで登場した"おちんちんシール"とキラキラのラメで愛憎渦巻く現世の男女間を表現しました。</p>
         </div>
         
         <div class="design">
-          <div class="lesson-icon">
+          <div class="content-icon">
           <%=link_to image_tag("bakuha.JPG") %>
           </div>
           <p class="txt-contents">たくさんの時間とお金とロマンを爆発という形で終えたロケットは、どんなに辛いことがあっても立ち上がる勇気とチャレンジ精神を学ばせてくれます。</p>
         </div>
 
         <div class="design">
-          <div class="lesson-icon">
+          <div class="content-icon">
             <%=link_to image_tag("rejibukuro.jpg") %>
           </div>
           <p class="txt-contents">ポイントカードもってますか？温めますか？お箸いりますか？に加えて新たにレジ係に課された"レジ袋いりますか？"を目で見るだけで唱えなくてもよくすることのできる店員に優しいTシャツ</p>
@@ -111,17 +113,15 @@
         <div class="clear"></div>
       </div>
     </div>
-  </div>
+  </div>  
 
-
-
-  
   <div class="message-wrapper">
-    <div class="container">
+    <div class="message-container">
       <div class="heading">
         <h2>はちゃめちゃに無茶に世界を信じてる</h2>
         <p>I believe this world in a crazy, reckless way.</p>
       </div>
     </div>
   </div>
+
 </body>
