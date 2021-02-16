@@ -13,4 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "tops";
+ @import "about";
+ @import "responsive";
+ @import "menu_bar";
  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Noto+Serif+JP:wght@500&display=swap');

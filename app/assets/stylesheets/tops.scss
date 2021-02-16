@@ -10,113 +10,7 @@ a {
   text-decoration: none;
 }
 
-.clear {
-  clear: left;
-}
-
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  overflow:	hidden;
-  position:	relative;
-  overflow:hidden;
-}
-.container img {
-  align-items: center;
-  max-width: 1170px;
-  width: 100%;
-	height:	100%;
-  z-index: 3;
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-
-// .container img:hover {
-//   transform:scale(1.2,1.2);
-//   transition:1s all;
-// }
-
-.container:hover .top{
-  // ズームさせる
-  // transform:scale(1.5,1.5);
-  // transition:1s all;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-
-
-.tshirt-container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  overflow:	hidden;
-  position:	relative;
-  overflow:hidden;
-}
-
-.tshirt-container img {
-  align-items: center;
-  max-width: 1170px;
-  width: 100%;
-	height:	100%;
-  z-index: 3;
-  transition:1s all;
-}
-
-.tshirt-container img:hover {
-  transform:scale(1.2,1.2);
-  transition:1s all;
-}
-
-
-.container .top{
-  align-items: center;
-  max-width: 1170px;
-  width: 1170px;
-  height:	814px;
-  z-index: 3;
-}
-
-
-.container a h1{
-  color: white;
-  text-align: center;
-  padding-top: 5rem;
-}
-
-.container a p{
-  color: white;
-}
-
-.container .caption {
-  text-align: center;
-  padding-top: 80px;
-}
-
-.container .mask {
-  max-width: 1170px;
-  width: 1170px;
-  height:	814px;
-  position:	absolute;	/* 絶対位置指定 */
-  top: 0;
-  left:	0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;	/* マスクを表示しない */
-  background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
-  -webkit-transition:	all 0.2s ease;
-  transition:	all 0.2s ease;
-}
-
-.container:hover .mask {
-  opacity:		1;
-}
+// トップイメージ
 .top-wrapper {
   padding: 50px 0 100px 0;
   background-position: center;
@@ -136,207 +30,152 @@ a {
    opacity: 0.7;
  }
 
-.btn {
-  padding: 8px 24px;
+
+.main-image img {
+  align-items: center;
+  max-width: 1170px;
+  width: 100%;
+	height:	100%;
+  z-index: 3;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.main-image {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow:	hidden;
+  position:	relative;
+  overflow:hidden;
+}
+
+.main-image:hover .top{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+
+.main-image .top{
+  align-items: center;
+  max-width: 1170px;
+  width: 1170px;
+  height:	814px;
+  z-index: 3;
+}
+
+
+.main-image a h1{
   color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
   text-align: center;
- }
-
-.btn:hover {
-  opacity: 1;
+  padding-top: 5rem;
 }
 
-.signup {
-  background-color: #239b76;
+.main-image a p{
+  color: white;
 }
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn-wrapper {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  position: relative;
-  height: 80px;
-  margin: 0 auto;
-  position: -webkit-sticky;
-  position: sticky;
+.main-image .mask {
+  max-width: 1170px;
+  width: 1170px;
+  height:	814px;
+  position:	absolute;	/* 絶対位置指定 */
   top: 0;
-  background-color: white;
-  z-index: 4;
+  left:	0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;	/* マスクを表示しない */
+  background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+  -webkit-transition:	all 0.2s ease;
+  transition:	all 0.2s ease;
+}
+
+.main-image:hover .mask {
+  opacity:		1;
 }
 
 
-.logo a img {
-  width:13em;
-  margin-top:5px;
-  background-color: white;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  /* background-color:rgba(255, 255, 255, 0.3); */
-  float: right;
-  /* transition: all 0.5s; */
-  margin-right: -25px;
-}
-
-/* .header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-} */
-
-.header-right a {
-  font-size: 0.8rem;
-  line-height:  95px;
-  padding: 0 25px;
-  color: black;
-  display: block;
-  /* 修正点 */
-  float: left;	
-  transition: all 0.1s;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-}
-
-	/* 付け足し */
-.header-right a::after {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: #333;
-  transform: scale(0, 1);
-  transform-origin: left top;
-  transition: transform .3s;
-}
-.header-right a:hover::after {
-  transform: scale(1, 1);
-} 
-
-footer {
-  position: relative;
-  height: 10px;
-  margin: 0 auto;
-}
-
-footer p {
-  color: black;
-  font-size: 10px;
-}
-
-.footer-left {
-  margin-left: 20em;
-  float: left;
-}
-
-.footer-right {
-  float: right;
-  margin-right: 20em;
-  margin-top: 2em;
-}
-.footer-left a {
-  font-size: 0.8rem;
-  line-height:  95px;
-  padding: 0 25px;
-  color: black;
-  display: block;
-  /* 修正点 */
-  transition: all 0.1s;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-}
-
-	/* 付け足し */
-.footer-left a::after {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: #333;
-  transform: scale(0, 1);
-  transform-origin: left top;
-  transition: transform .3s;
-}
-.footer-left a:hover::after {
-  transform: scale(1, 1);
-} 
-
-
-
-.contents-wrapperr {
-  /* 付け足し */
+// コンテンツ
+.contents-wrapper {
   padding-left: 5%;	
   padding-right: 5%;
-
   padding-bottom: 80px;
   background-color: #f7f7f7;
   text-align: center;
 }
-
-.content-wrapper {
+.content-wrapper-white {
   padding-left: 5%;	
   padding-right: 5%;
   padding-bottom: 80px;
   text-align: center;
 }
-
 .heading {
   padding-top: 80px;	
   padding-bottom: 50px;
   color: #5f5d60;
 }
-
 .heading h1 {
   font-weight: normal;
   font-family: 'Big Shoulders Display', cursive;
   font-size: 100px;
 }
-
+.heading h3 {
+  font-weight: bold;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow:	hidden;
+  position:	relative;
+  overflow:hidden;
+}
+.container img {
+  align-items: center;
+  max-width: 1170px;
+  width: 100%;
+	height:	100%;
+  z-index: 3;
+}
+.tshirt-container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow:	hidden;
+  position:	relative;
+  overflow:hidden;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.tshirt-container img {
+  align-items: center;
+  max-width: 1170px;
+  width: 100%;
+	height:	100%;
+  z-index: 3;
+  transition:1s all;
+}
+.tshirt-container img:hover {
+  transform:scale(1.2,1.2);
+  transition:1s all;
+}
 iframe {
   align-items: center;
 }
-
 .music img {
   width: 250px;
   height: 60px;
   margin-top: 10em;
 }
-
-.lesson img {
+.content img {
   align-items: center;
-
 }
-
-.lesson {
+.content {
   float: left;
   width: 33.3%;
 }
@@ -344,25 +183,18 @@ iframe {
   float: left;
   width: 25%;
 }
-
-
-
-
-.lesson-icon {
+.content-icon {
   position: relative;
 }
-
-.lesson-icon img {
+.content-icon img {
   padding: auto;
 }
-
-.lesson-icon p {
+.content-icon p {
   position: absolute;
   top: 44%;
   width: 100%;
   color: white;
 }
-
 .txt-contents {
   width: 80%;
   display: inline-block;
@@ -373,62 +205,30 @@ iframe {
   color: #b3aeb5;
 }
 
+// メッセージ
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
 }
-
 .message {
   background-color: #5dca88;
   padding: 15px 40px;
   cursor: pointer;
   box-shadow: 0 7px #1a7940;
 }
-
-.heading h3 {
-  font-weight: bold;
-}
-
 .message:active {
   box-shadow: none;
   position: relative;
   top: 7px;
 }
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;        
-  display: none;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  margin-right: 6rem;
-}
-
-#nav {
-  list-style: none;
-  overflow: hidden;
-}
- 
-#nav li {
-  text-align: center;
-  background-color: white;
-  float: right;
-  padding: 0.7rem;
-}
- 
-#nav li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+.message-container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow:	hidden;
+  position:	relative;
+  overflow:hidden;
 }
 
