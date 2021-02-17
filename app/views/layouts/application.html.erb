@@ -10,8 +10,7 @@
     <!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
-    <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag('favicon.ico') %>
@@ -30,9 +29,6 @@
             <%=link_to image_tag("iambh_logo.png"), tops_path %>
           </div>
         </div>
-      <!-- モバイル用のヘッダーメニューアイコン -->
-        <span class="fa fa-bars menu-icon"></span>
-
         <div class="header-right">
           <a href="#Music">Music</a>
           <a href="#Portrait">Portrait</a>
@@ -40,6 +36,19 @@
           <a href="#WebApp" class="login">WebApp</a>
           <a href="#Contact" class="login">Contact</a>
         </div>
+      </div>
+      <nav class="sp-nav">
+        <ul>
+            <li><a href="#Music">Music</a></li>
+            <li><a href="#Portrait">Portrait</a></li>
+            <li><a href="#T-shirt">T-shirt</a></li>
+            <li><a href="#WebApp" class="login">WebApp</a></li>
+            <li><a href="#Contact" class="login">Contact</a></li>
+            <li class="close"><span>閉じる</span></li>
+        </ul>
+      </nav>
+      <div id="hamburger">
+        <span></span>
       </div>
     </header>
     <%= yield %>
