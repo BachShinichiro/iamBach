@@ -1,5 +1,8 @@
 /* スマホ向けレイアウト */
-@media (max-width: 670px) {
+.sp-nav {
+  display: none;
+}
+@media screen and (max-width: 640px) {
 
   .header-right{
     display: none;
@@ -20,6 +23,7 @@
     transition: all .2s ease-in-out;
     opacity: 0;
     transform: translateY(-100%);
+    align-items: center;
   }
   #hamburger {
     position: relative;
