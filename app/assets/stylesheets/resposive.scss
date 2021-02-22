@@ -2,6 +2,24 @@
 .sp-nav {
   display: none;
 }
+
+@media screen and (min-width: 641px) {
+  .main-image .top{
+    align-items: center;
+    max-width: 100%;
+    width: auto;
+    height:	auto;
+    z-index: 3;
+  }
+  .content {
+    float: left;
+    width: 33.3%;
+  }
+  .design {
+    float: left;
+    width: 25%;
+  }
+}
 @media screen and (max-width: 640px) {
 
   // メニュー
@@ -125,9 +143,33 @@
     transform: translateY( 0 );
     opacity: 1;
  }
-}
 
-.sns_icon{
-  display: none;
+  .sns_icon{
+    display: none;
+  }
+
+  .main-image .top{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  .content {
+    float: left;
+    width: 100%;
+  }
+  .design {
+    float: left;
+    width: 100%;
+  }
+
+  li a {
+    list-style: none;
+    color: white;
+  }
+  iframe {
+    width: auto;
+  }
+
 }
 
