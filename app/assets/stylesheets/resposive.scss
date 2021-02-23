@@ -19,6 +19,13 @@
     float: left;
     width: 25%;
   }
+  .tshirt-container img:hover {
+    transform:scale(1.2,1.2);
+    transition:1s all;
+  }
+  .responsive-message {
+    display: none;
+  }
 }
 @media screen and (max-width: 640px) {
 
@@ -166,9 +173,14 @@
   li a {
     list-style: none;
     color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
   }
   iframe {
     width: auto;
+  }
+  .message {
+    display: none;
   }
 
 }
