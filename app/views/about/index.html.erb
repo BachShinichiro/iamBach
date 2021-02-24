@@ -1,6 +1,65 @@
-<h1>About</h1>
-<%= image_tag("about.JPG" ,width: "160px", height: "160px") %>
-<p>氏名：本村　槙一郎　<br>
-生年月日：1993年6月2日（27歳）<br>
-在住：東京都渋谷区<br>
-</p>
+<div class="about_container"> 
+
+  <h1>About</h1>
+  <h5>I am Bach Shinichiro<br>
+    僕は バッハ槙一郎</h5>
+  <div class="biography">
+   <div class="Profile_img">
+    <%= image_tag "aaa.JPG" %>
+    </div>
+    <table>
+    <tr>
+        <td>1993年</td><td>長崎県佐世保市で生まれる。鹿児島県鹿児島市で育つ</td>
+      </tr>
+      <tr>
+        <td>2012年</td><td>俳優を目指して上京、初舞台を踏む</td>
+      </tr>
+      <tr>
+        <td>2016年</td><td>フォークソングを作り始める</td>
+      </tr>
+      <tr>
+        <td>2016年</td><td>キングオブコントに出場する(1回戦敗退)</td>
+      </tr>
+      <tr>
+        <td>2019年</td><td>バンド(ザ・きんぎょちゃん)を結成</td>
+      </tr>
+      <tr>
+        <td>2020年</td><td>オーストラリアの企業に入社しフェスを運営する</td>
+      </tr>
+    </table>
+  </div>
+  <p>次のキャンバスには何を描こうか</p>
+    <%=link_to image_tag("about_img2.JPG"),"https://www.youtube.com/channel/UCAVHWHmCv7TOGQvOfP-3VFg/videos", class: "next", target: :_blank, rel: "noopener noreferrer" %>
+    <%=link_to image_tag("about_img_length.JPG"),"https://www.youtube.com/channel/UCAVHWHmCv7TOGQvOfP-3VFg/videos", class: "next_length", target: :_blank, rel: "noopener noreferrer" %>
+  <p>to be continue..</p>
+  <div class="faq">
+    <h5>なぜバッハを名乗っているのか？</h5>
+    <p>
+    現代音楽の父と言われている"ヨハン・ゼバスティアン・バッハ"
+    以前通っていた音楽スクールで、<br>
+    現代音楽の基礎を作り出したのはバッハということを知りました。<br>
+    現代の音楽全てがバッハに影響を受けているといっても過言ではないと<br>
+    先生が言っていたので、僕もバッハの生み出した音楽の一部だと思い<br>
+    父の苗字であるバッハと名乗ることにしました。<br>ps.
+    ドレミの音階を定義したのもバッハと思っていたが、今調べてみたら古代ギリシャのピタゴラスでした。<br>
+    今まで嘘を吹聴していました。僕から聞いたよーって方ごめんね。</p>
+  </div>
+  <div class="faq_mobile">
+    <h5>なぜバッハ？</h5>
+    <p>
+    現代音楽の父と言われている<br>"ヨハン・ゼバスティアン・バッハ"<br>
+    以前通っていた音楽スクールで、<br>
+    現代音楽の基礎を作り出したのは<br>
+    バッハということを知りました。<br>
+    現代の音楽全てがバッハに影響を受けている<br>
+    といっても過言ではないと先生が言っていたので、
+    <br>僕もバッハの生み出した音楽の一部だと思い<br>
+    父の苗字であるバッハと名乗ることにしました。<br>
+    僕もバッハの生み出した音楽の一部だと思い<br>
+    苗字をバッハと名乗ることにしました。<br>
+    ps.<br>
+    ドレミの音階を作ったのもバッハと思っていたが、<br>
+    今調べてみたら古代ギリシャのピタゴラスでした。<br>
+    今まで嘘を吹聴していました。すみません。</p>
+  </div>
+</div>
