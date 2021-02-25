@@ -40,10 +40,10 @@
         </div>
         <nav class="sp-nav">
           <ul>
-              <li><a href="about/index">About</a></li>
-              <li><a href="tops#Music">Music</a></li>
-              <li><a href="tops#Portrait">Portrait</a></li>
-              <li><a href="tops#T-shirt">T-shirt</a></li>
+              <li><<%= link_to 'About', about_index_path %></li>
+              <li><%= link_to 'Music', root_path(anchor: 'Music') %></li>
+              <li><%= link_to 'Portrait', root_path(anchor: 'Portrait') %></li>
+              <li><%= link_to 'T-shirt', root_path(anchor: 'T-shirt') %></li>
               <li class="close"><span>Close</span></li>
           </ul>
         </nav>
