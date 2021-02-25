@@ -1,6 +1,5 @@
 
 header {
-  position: relative;
   height: 80px;
   margin: 0 auto;
   position: -webkit-sticky;
@@ -8,6 +7,9 @@ header {
   top: 0;
   background-color: white;
   z-index: 4;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 .container {
   max-width: 1170px;
