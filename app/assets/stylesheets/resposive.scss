@@ -2,9 +2,11 @@
 .sp-nav {
   display: none;
 }
-
-
 @media screen and (min-width: 641px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
   .main-image .top{
     align-items: center;
     max-width: 100%;
@@ -54,28 +56,19 @@
   .Profile_img {
     padding-right: 3rem;
   }
-
   // フッター
   footer {
-    position: relative;
-    height: 10px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
   }
-
   footer p {
     color: black;
     font-size: 10px;
   }
-
-  .footer-left {
-    margin-left: 20em;
-    float: left;
-  }
-
   .footer-right {
-    float: right;
-    margin-right: 20em;
-    margin-top: 2em;
+    text-align: center;
   }
   .footer-left a {
     font-size: 0.8rem;
@@ -89,7 +82,6 @@
     display: inline-block;
     text-decoration: none;
   }
-
     /* 付け足し */
   .footer-left a::after {
     position: absolute;
@@ -106,17 +98,13 @@
   .footer-left a:hover::after {
     transform: scale(1, 1);
   }
-
-
-
 }
 @media screen and (max-width: 640px) {
-
   // メニュー
   .header-right{
     display: none;
   }
-  .footer-menu {
+  .footer-left {
     display: none;
   }
   .sp-nav {
@@ -298,4 +286,5 @@
     margin-top: 0;
   }
 }
+
 
